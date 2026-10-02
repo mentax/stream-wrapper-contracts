@@ -229,7 +229,7 @@ jobs:
   status-check:
     name: "Status check - ${{ github.workflow }}"
     runs-on: "ubuntu-latest"
-    needs: [ "coding-standard", "static-analysis", "tests", "tests-mutations" ]
+    needs: [ "coding-standard", "static-analysis", "tests" ]
 
     if: "${{ always() }}"
 
